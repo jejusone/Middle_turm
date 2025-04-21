@@ -100,12 +100,39 @@ header nav ul li a {
   color: chocolate;
 }
 /* header .menu-name {
-    font-family: 'ganachoco';
-    font-size: 20px;
-  } */
+  font-family: 'ganachoco';
+  font-size: 20px;
+} */
 header a:hover {
   border-bottom: 2px black solid;
 }
+/*footer*/
+footer {
+  padding-top: 10px;
+  margin-top: 10px;
+  font-size: large;
+  color: white;
+  background-color: gray;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer div {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer a {
+  margin-left: 10px;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+}
+/* */
 
 /* .main .container {
   display: flex;
@@ -127,8 +154,10 @@ header a:hover {
   background-image: url('https://oopy.lazyrockets.com/api/v2/notion/image?src=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb2cb3060-e4e1-43fe-9980-0591c94ec8e8%2FLearn.gif&blockId=2a73376e-aac2-4b39-9568-441bbf3eed9a');
   background-size: cover;
   background-repeat: no-repeat;
-  } */
+} */
 
+
+/*index.css*/
 .main {
   display: flex;
   align-items: center; /* 세로 중앙 정렬 */
@@ -143,6 +172,12 @@ header a:hover {
   /* display: flex; */
   flex-shrink: 0; /* 이미지 크기 유지 */
 }
+
+#mainimg {
+  width: 90%; /* 이미지 너비를 화면에 맞게 조정 */
+  height: auto;
+}
+
 .right-section {
   display: flex;
   flex-direction: column;
@@ -183,74 +218,134 @@ header a:hover {
   padding: 20px;
   font-size: 30px;
 }
-.discription {
-  /* 설명 부분 스타일 */
-  display: flex;
-  flex-direction: column;
+/* */
 
-  gap: 10px; /* 텍스트 요소 간 간격 */
+/*portfolio.css*/
+.sidebar-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: 'Shilla_CultureB-Bold', sans-serif;
+  padding: 20px;
+  border-right: 2px solid #eee;
 }
 
-.discription h1 {
-  margin-top: 0; /* 상단 여백 제거 */
-  margin-bottom: 10px; /* 제목 아래 여백 */
+.sidebar-left {
+  padding: 20px;
 }
 
-.discription p {
-  margin: 0; /* 단락 기본 여백 제거 */
-}
-/* section {
-  background-color: aqua;
-} */
-
-summary {
-  list-style: none; /* 기본 삼각형 제거 */
-  cursor: pointer;
-}
-footer {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 10px;
-  font-size: large;
-  color: white;
-  background-color: gray;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-footer div {
-  margin-left: 20px;
-  margin-right: 20px;
+.portfolio-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  color: black;
+  border-left: 4px solid #ffb347;
+  padding-left: 10px;
 }
-
-footer a {
-  margin-left: 10px;
-}
-
-footer img {
-  width: 40px;
-  height: 40px;
-}
-
 .portfolio-title {
   font-size: larger;
   font-weight: bold;
 }
 
-.team-image {
+.sidebar-nav li {
+  margin: 10px 0;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  color: #333;
+  background-color: #f8f8f8;
+  padding: 8px 12px;
+  display: inline-block;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.sidebar-nav a:hover {
+  background-color: #ffe4b3;
+  color: #000;
+  transform: translateX(5px);
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #444;
+}
+
+details[open] summary {
+  color: #ff8800;
+}
+
+summary {
+  list-style: none; /* 기본 삼각형 제거 */
+  cursor: pointer;
+}
+
+iframe {
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-right {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  margin: 20px;
+  justify-self: end;
+  align-self: start;
+}
+
+.sidebar-right form {
   display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  gap: 50px;
+  gap: 8px;
+  align-items: center;
 }
 
-.team-image img {
-  width: 250px;
-  height: auto;
+.friend-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fdfce5; /* 연한 노랑 배경 */
+  border-radius: 8px;
+  margin-top: 10px;
 }
 
+.friend-form input[type='email'] {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.button-friend {
+  padding: 8px 12px;
+  background-color: #ffcc66;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button-friend:hover {
+  background-color: #ffbb33;
+}
+/* */
+
+/*secon.css*/
 #secon {
   text-decoration: none;
   color: inherit;
@@ -311,120 +406,23 @@ footer img {
   text-align: center;
   margin-bottom: 0;
 }
+/* */
 
-.sidebar-grid {
-  flex:1;
-  display: grid;
-  grid-template-columns: 1fr;
-  font-family: 'Shilla_CultureB-Bold', sans-serif;
-  padding: 20px;
-  border-right: 2px solid #eee;
-}
-
-.sidebar-left {
-  padding: 20px;
-}
-
-.sidebar-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.portfolio-title {
-  font-size: 30px;
-  font-weight: bold;
-  margin: 20px 0 10px;
-  color: black;
-  border-left: 4px solid #ffb347;
-  padding-left: 10px;
-}
-
-.sidebar-nav li {
-  margin: 10px 0;
-}
-
-.sidebar-nav a {
-  text-decoration: none;
-  color: #333;
-  background-color: #f8f8f8;
-  padding: 8px 12px;
-  display: inline-block;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-  font-size: 20px;
-}
-
-.sidebar-nav a:hover {
-  background-color: #ffe4b3;
-  color: #000;
-  transform: translateX(5px);
-}
-
-details summary {
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 20px;
-  margin-top: 10px;
-  color: #444;
-}
-
-details[open] summary {
-  color: #ff8800;
-}
-
-iframe {
-  margin-top: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar-right {
-  position: absolute;
-  top: 120px;
-  right: 0;
-  margin: 20px;
-  justify-self: end;
-  align-self: start;
-}
-
-.sidebar-right form {
+/*team.css*/
+.team-image {
   display: flex;
-  gap: 8px;
-  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 50px;
 }
 
-.friend-form {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #fdfce5; /* 연한 노랑 배경 */
-  border-radius: 8px;
-  margin-top: 10px;
+.team-image img {
+  width: 250px;
+  height: auto;
+  background-color: white;
 }
 
-.friend-form input[type='email'] {
-  padding: 8px;
-  font-size: 14px;
-  border: 1px solid #bbb;
-  border-radius: 4px;
-}
 
-.button-friend {
-  padding: 8px 12px;
-  background-color: #ffcc66;
-  color: black;
-  border: none;
-  border-radius: 4px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.button-friend:hover {
-  background-color: #ffbb33;
-}
 
 .member img:hover {
   transform: scale(1.1); /* 10% 확대 */
@@ -479,5 +477,288 @@ iframe {
   text-decoration: underline;
 }
 
+/*#########################################################*/
 
 
+
+
+/* ============================
+   📱 반응형 웹 설정 시작
+   ============================ */
+
+/* 
+  ✅ 모바일 기기용 스타일 (최대 너비 600px)
+  화면이 작아졌을 때 텍스트 크기, 이미지 크기, 레이아웃 등을 조정해줍니다.
+*/
+@media screen and (max-width: 600px) {
+  /* 헤더 스타일 조정 */
+  header {
+    padding: 15px 10px; /* 패딩 줄여서 공간 확보 */
+    min-height: 50px; /* 헤더 높이 축소 */
+    text-align: center; /* 중앙 정렬로 깔끔하게 */
+  }
+
+  header #branding {
+    float: none; /* 로고를 중앙으로 */
+    margin-bottom: 10px;
+  }
+
+  header nav {
+    float: none; /* 내비게이션도 중앙으로 */
+    margin-top: 0;
+  }
+
+  header nav ul {
+    padding: 0;
+  }
+
+  header li {
+    display: block; /* 메뉴 항목을 세로로 쌓음 */
+    padding: 5px 0;
+  }
+
+  header a {
+    font-size: 14px; /* 글씨 크기 축소 */
+  }
+
+  header .highlight,
+  header .highlight2,
+  header .current,
+  header nav ul li a {
+    font-size: 14px; /* 메뉴 글씨 크기 통일 */
+  }
+
+  /* 메인 섹션 스타일 */
+  .main {
+    flex-direction: column; /* 이미지와 텍스트를 세로로 쌓음 */
+    align-items: center; /* 중앙 정렬 */
+    padding: 20px 10px; /* 여백 축소 */
+    gap: 15px;
+  }
+
+  .main-text {
+    font-size: 28px; /* 타이틀 글씨 크기 줄이기 */
+    text-align: center;
+    margin-bottom: 50px; /* 여백 조정 */
+  }
+
+  .check-text {
+    font-size: 16px; /* 설명 텍스트 크기 축소 */
+    text-align: center;
+  }
+
+  #mainimg {
+    width: 100%; /* 이미지가 화면 너비에 맞게 조정 */
+    max-width: 300px; /* 최대 너비 제한 */
+  }
+
+  /* 푸터 스타일 */
+  footer {
+    flex-direction: column; /* 푸터 요소 세로로 쌓음 */
+    padding: 10px;
+    font-size: medium;
+  }
+
+  footer div {
+    margin: 5px 0; /* 마진 조정 */
+  }
+
+  footer img {
+    width: 30px; /* 아이콘 크기 축소 */
+    height: 30px;
+  }
+
+  /* 포트폴리오 섹션 */
+  .sidebar-grid {
+    padding: 10px; /* 패딩 축소 */
+    border-right: none; /* 작은 화면에서는 구분선 제거 */
+  }
+
+  .portfolio-title {
+    font-size: 24px; /* 타이틀 크기 축소 */
+  }
+
+  .sidebar-nav a {
+    font-size: 16px; /* 링크 글씨 크기 축소 */
+    padding: 6px 10px;
+  }
+
+  .sidebar-right {
+    position: static; /* 고정 위치 해제 */
+    margin: 10px auto;
+    width: 90%; /* 화면에 맞게 너비 조정 */
+    text-align: center;
+  }
+
+  .friend-form {
+    flex-direction: column; /* 폼 요소 세로로 쌓음 */
+    gap: 8px;
+  }
+
+  .friend-form input[type='email'] {
+    width: 100%; /* 입력창 너비 전체로 */
+    font-size: 12px;
+  }
+
+  .button-friend {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  /* secon 섹션 */
+  #secon_introduce {
+    flex-direction: column; /* 박스 세로로 쌓음 */
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 20px;
+  }
+
+  .text-box {
+    width: 90%; /* 화면에 맞게 너비 조정 */
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .report_textbox {
+    width: 90%; /* 화면에 맞게 너비 조정 */
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  /* 팀 섹션 */
+  .team-image {
+    flex-direction: column; /* 이미지 세로로 쌓음 */
+    align-items: center;
+    gap: 20px;
+  }
+
+  .team-image img {
+    width: 200px; /* 이미지 크기 축소 */
+  }
+
+  .team-image {
+    font-size: 20px; /* 글씨 크기 축소 */
+  }
+
+  .team-table {
+    width: 95%; /* 표 너비 조정 */
+    font-size: 16px; /* 글씨 크기 축소 */
+  }
+
+  .team-table th,
+  .team-table td {
+    padding: 8px 10px; /* 패딩 축소 */
+  }
+}
+
+/*
+  ✅ 태블릿 기기용 스타일 (최대 너비 900px)
+  - 모바일보다는 크지만 PC보다는 작은 화면에 적합한 중간 스타일.
+  - 일부 요소는 세로로 쌓고, 텍스트와 이미지 크기를 적절히 조정.
+*/
+@media screen and (max-width: 900px) {
+  /* 헤더 스타일 */
+  header {
+    padding: 20px 15px;
+    min-height: 60px;
+  }
+
+  header a {
+    font-size: 16px;
+  }
+
+  header .highlight,
+  header .highlight2,
+  header .current,
+  header nav ul li a {
+    font-size: 16px;
+  }
+
+  /* 메인 섹션 */
+  .main {
+    flex-direction: column; /* 세로 레이아웃 유지 */
+    padding: 30px 15px;
+    gap: 20px;
+  }
+
+  .main-text {
+    font-size: 36px; /* 타이틀 크기 조정 */
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .check-text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #mainimg {
+    width: 100%;
+    max-width: 350px; /* 이미지 크기 제한 */
+  }
+
+  /* footer */
+  footer {
+    padding: 15px;
+    font-size: large;
+  }
+
+  /* 포트폴리오 섹션 */
+  .sidebar-grid {
+    padding: 15px;
+  }
+
+  .portfolio-title {
+    font-size: 28px;
+  }
+
+  .sidebar-nav a {
+    font-size: 18px;
+  }
+
+  .sidebar-right {
+    position: static;
+    margin: 15px auto;
+    width: 80%;
+  }
+
+  /* secon 섹션 */
+  #secon_introduce {
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 100px;
+  }
+
+  .text-box {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .report_textbox {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  /* 팀 섹션 */
+  .team-image {
+    flex-wrap: wrap; /* 이미지가 화면에 맞게 줄 바꿈 */
+    gap: 30px;
+  }
+
+  .team-image img {
+    width: 220px;
+  }
+
+  .team-table {
+    font-size: 18px;
+  }
+}
+
+/*
+  ✅ 데스크탑 기본 스타일은 기존에 작성한 CSS 유지!
+  (min-width: 901px 이상일 때 적용됨)
+*/
+
+/* ============================
+   ✅ 반응형 웹 설정 끝!
+   ============================ */
