@@ -156,7 +156,6 @@ footer img {
   background-repeat: no-repeat;
 } */
 
-
 /*index.css*/
 .main {
   display: flex;
@@ -422,8 +421,6 @@ iframe {
   background-color: white;
 }
 
-
-
 .member img:hover {
   transform: scale(1.1); /* 10% 확대 */
 }
@@ -478,9 +475,6 @@ iframe {
 }
 
 /*#########################################################*/
-
-
-
 
 /* ============================
    📱 반응형 웹 설정 시작
