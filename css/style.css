@@ -468,7 +468,7 @@ iframe { /*youtube*/
   background-color: #f9f9f9;
 }
 
-.team-table a {
+/* .team-table a {
   color: #3366cc;
   text-decoration: none;
   font-weight: bold;
@@ -476,33 +476,28 @@ iframe { /*youtube*/
 
 .team-table a:hover {
   text-decoration: underline;
-}
+} */
 
 /*#########################################################*/
 
-/* ============================
-   📱 반응형 웹 설정 시작
-   ============================ */
 
 /* 
-  ✅ 모바일 기기용 스타일 (최대 너비 600px)
-  화면이 작아졌을 때 텍스트 크기, 이미지 크기, 레이아웃 등을 조정해줍니다.
+   모바일크기가 다양해져서 600정도로 넉넉하게 설정
 */
 @media screen and (max-width: 600px) {
-  /* 헤더 스타일 조정 */
   header {
     padding: 15px 10px; /* 패딩 줄여서 공간 확보 */
     min-height: 50px; /* 헤더 높이 축소 */
-    text-align: center; /* 중앙 정렬로 깔끔하게 */
+    text-align: center; /* 중앙 정렬 */
   }
 
   header #branding {
-    float: none; /* 로고를 중앙으로 */
+    float: none; /* 로고를 중앙*/
     margin-bottom: 10px;
   }
 
   header nav {
-    float: none; /* 내비게이션도 중앙으로 */
+    float: none; /* 내비게이션도 중앙 */
     margin-top: 0;
   }
 
@@ -526,7 +521,7 @@ iframe { /*youtube*/
     font-size: 14px; /* 메뉴 글씨 크기 통일 */
   }
 
-  /* 메인 섹션 스타일 */
+  /* index */
   .main {
     flex-direction: column; /* 이미지와 텍스트를 세로로 쌓음 */
     align-items: center; /* 중앙 정렬 */
@@ -550,7 +545,7 @@ iframe { /*youtube*/
     max-width: 300px; /* 최대 너비 제한 */
   }
 
-  /* 푸터 스타일 */
+  /* footer */
   footer {
     flex-direction: column; /* 푸터 요소 세로로 쌓음 */
     padding: 10px;
@@ -566,7 +561,7 @@ iframe { /*youtube*/
     height: 30px;
   }
 
-  /* 포트폴리오 섹션 */
+  /* portfolio */
   .sidebar-grid {
     padding: 10px; /* 패딩 축소 */
     border-right: none; /* 작은 화면에서는 구분선 제거 */
@@ -603,7 +598,7 @@ iframe { /*youtube*/
     padding: 6px 10px;
   }
 
-  /* secon 섹션 */
+  /* secon  */
   #secon_introduce {
     flex-direction: column; /* 박스 세로로 쌓음 */
     align-items: center;
@@ -623,7 +618,7 @@ iframe { /*youtube*/
     padding: 15px;
   }
 
-  /* 팀 섹션 */
+  /* team */
   .team-image {
     flex-direction: column; /* 이미지 세로로 쌓음 */
     align-items: center;
@@ -650,12 +645,10 @@ iframe { /*youtube*/
 }
 
 /*
-  ✅ 태블릿 기기용 스타일 (최대 너비 900px)
-  - 모바일보다는 크지만 PC보다는 작은 화면에 적합한 중간 스타일.
-  - 일부 요소는 세로로 쌓고, 텍스트와 이미지 크기를 적절히 조정.
+  태블릿 사이즈
 */
 @media screen and (max-width: 900px) {
-  /* 헤더 스타일 */
+  /* 헤더 */
   header {
     padding: 20px 15px;
     min-height: 60px;
@@ -672,7 +665,7 @@ iframe { /*youtube*/
     font-size: 16px;
   }
 
-  /* 메인 섹션 */
+  /* index */
   .main {
     flex-direction: column; /* 세로 레이아웃 유지 */
     padding: 30px 15px;
@@ -701,7 +694,7 @@ iframe { /*youtube*/
     font-size: large;
   }
 
-  /* 포트폴리오 섹션 */
+  /* portfolio */
   .sidebar-grid {
     padding: 15px;
   }
@@ -720,7 +713,7 @@ iframe { /*youtube*/
     width: 80%;
   }
 
-  /* secon 섹션 */
+  /* secon  */
   #secon_introduce {
     flex-direction: column;
     gap: 25px;
@@ -737,7 +730,7 @@ iframe { /*youtube*/
     font-size: 16px;
   }
 
-  /* 팀 섹션 */
+  /* team */
   .team-image {
     flex-wrap: wrap; /* 이미지가 화면에 맞게 줄 바꿈 */
     gap: 30px;
@@ -752,11 +745,4 @@ iframe { /*youtube*/
   }
 }
 
-/*
-  ✅ 데스크탑 기본 스타일은 기존에 작성한 CSS 유지!
-  (min-width: 901px 이상일 때 적용됨)
-*/
-
-/* ============================
-   ✅ 반응형 웹 설정 끝!
-   ============================ */
+  
