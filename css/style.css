@@ -99,10 +99,7 @@ header nav ul li a {
   font-weight: bold;
   color: chocolate;
 }
-/* header .menu-name {
-  font-family: 'ganachoco';
-  font-size: 20px;
-} */
+
 header a:hover {
   border-bottom: 2px black solid;
 }
