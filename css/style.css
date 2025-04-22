@@ -297,12 +297,11 @@ object {
 }
 
 .sidebar-right {
-  position: absolute;
+  position: absolute; /*위치 맘대로 지정*/
   top: 120px;
   right: 0;
   margin: 20px;
-  justify-self: end;
-  align-self: start;
+  
 }
 
 .sidebar-right form {
